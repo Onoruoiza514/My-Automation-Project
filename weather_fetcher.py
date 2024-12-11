@@ -3,7 +3,7 @@ import request
 
 """
 Weather Fetcher and Updater
-[Project description here, same as above...]
+The comprehensive description for this project is available @Readme.md
 """
 
 # Prompt user to input multiple locations
@@ -14,9 +14,8 @@ locations = [location.strip() for location in locations]  # Clean input and prep
 
 print("\nFetching weather details for:", locations)
 
-import requests
-
-API_KEY = "your_api_key_here"  # Replace with your actual API key
+#Now let's begin 
+API_KEY = "dba9af993c1ada8d045c99e6492363ba"  # This is my API key i generated from openweathermap portal after signing up 
 BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
 
 def get_weather(city):
@@ -38,19 +37,7 @@ def get_weather(city):
     else:
         return {"error": f"Could not fetch weather for {city}"}
 
-# Fetch weather for all locations
-for city in locations:
-    weather = get_weather(city)
-    if "error" in weather:
-        print(weather["error"])
-    else:
-        print(f"\nWeather in {city}:")
-        print(f"  Temperature: {weather['temperature']}°C")
-        print(f"  Feels Like: {weather['feels_like']}°C")
-        print(f"  Description: {weather['description']}")
-        print(f"  Humidity: {weather['humidity']}%")
-        print(f"  Wind Speed: {weather['wind_speed']} m/s")
-    
+# Fetch weather for all locations    
 while True:
     for city in locations:
         weather = get_weather(city)
@@ -63,6 +50,6 @@ while True:
             print(f"  Description: {weather['description']}")
             print(f"  Humidity: {weather['humidity']}%")
             print(f"  Wind Speed: {weather['wind_speed']} m/s")
-    print("\nUpdating weather data in 120 seconds...\n")
-    time.sleep(120)
+     print("\nUpdating weather data in 120 seconds...\n")
+     time.sleep(120) #Based on how you decide to refresh 
 
