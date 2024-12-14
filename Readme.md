@@ -47,13 +47,12 @@ Scheduling: Automate emails to be sent at specific times (optional).
 
 ## 🛠️ TECHNOLOGIES USED
 Python: Core programming language.
-smtplib: For sending emails via SMTP.
-email.mime: For creating and formatting email content.
-pandas: For handling recipient data from CSV files.
-schedule: For scheduling emails (optional).
+smtplib: Library i used for sending emails via SMTP.
+email.mime: Library used for creating and formatting email content.
+pandas: Library for handling recipient data from CSV files.
+schedule: For scheduling emails.
 
 ## 📂 PROJECT STRUCTURE
-
 email-automation-tool/  
 │  
 ├── recipients.csv          # Sample dataset with recipient details  
@@ -64,14 +63,16 @@ email-automation-tool/
 
 ## ⚙️ SETUP INSTRUCTIONS
 1. Clone the Repository
-2. Install Dependencies
-Install the required Python libraries:
+Run the following code to clone this repository:
 
-bash
-Copy code
+git clone https://github.com/Onoruoiza514/email-automation-tool.git  
+cd email-automation-tool  
+
+2. Install Dependencies by running the following line:
+
 pip install pandas schedule yagmail  
 
-3. Prepare the CSV File
+3. Prepare the CSV Fil
 Update recipients.csv with your recipient details. Ensure the following columns:
 
 Name: Recipient’s name.
@@ -83,10 +84,9 @@ Message: Email body.
 1. Run the Script
 Execute the script to send emails:
 
-bash
-Copy code
 python main.py  
-2. Optional Features
+
+3. Optional Features
 Add Attachments: Place files in the /attachments/ folder and reference them in the script.
 Schedule Emails: Use the schedule library to send emails at specific times.
 
@@ -99,10 +99,10 @@ Add OAuth2 authentication for Gmail/Outlook.
 Build a user-friendly GUI.
 Add multi-language support.
 
-## 🤝 CONTRIBUTING
+## 🤝 Contributing ????
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
 
-## 📧 CONTACT
+📧 Contact
 For questions or feedback, reach out at:
 
 Email: abdulfaatihitijani@gmail.com
