@@ -23,7 +23,7 @@ This project is a Python script that fetches real-time weather data for multiple
 
 ## TOOLS I USED
 - Python
-- Replit (for development)
+- Replit (for development) 
 - Weather API (I used OpenWeatherApi)
 
 
@@ -64,16 +64,13 @@ email-automation-tool/
 
 ## ⚙️ SETUP INSTRUCTIONS
 1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/your-username/email-automation-tool.git  
-cd email-automation-tool  
 2. Install Dependencies
 Install the required Python libraries:
 
 bash
 Copy code
 pip install pandas schedule yagmail  
+
 3. Prepare the CSV File
 Update recipients.csv with your recipient details. Ensure the following columns:
 
@@ -108,5 +105,5 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## 📧 CONTACT
 For questions or feedback, reach out at:
 
-Email: your-email@example.com
-GitHub: your-username
+Email: abdulfaatihitijani@gmail.com
+GitHub: Onoruoiza514
